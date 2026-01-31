@@ -20,7 +20,7 @@ end
 
 function DebugWindow:draw()
     if not self.isVisible then return end
-    love.graphics.setColor(0, 0, 0, 0.7)
+    love.graphics.setColor(0, 0, 0, 0.5)
     love.graphics.rectangle('fill', 10, 10, 300, 20 + 18 * #self.lines)
     love.graphics.setColor(1, 1, 1, 1)
     for i, line in ipairs(self.lines) do
