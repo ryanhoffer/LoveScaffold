@@ -148,8 +148,7 @@ Yes! This scaffold is MIT-licensed and free to use.
 - Gamepad/controller support
 - Particle effects and animations
 - Sound/music manager
-- Level editor integration
-- Online high scores or multiplayer
+- Gravity and Physics System
 
 ---
 
