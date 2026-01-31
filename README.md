@@ -77,10 +77,12 @@ In the menu scene, it shows:
 - FPS
 - Lua memory usage
 
+
 ### Customization
 
 - To add more debug info, call `debug.print()` in any update or draw function.
 - To change the debug key, edit the `DEBUG_WINDOW_KEY` variable in `conf.lua` (e.g., `DEBUG_WINDOW_KEY = "f1"`).
+- To change how many lines the debug window displays, set `DEBUG_WINDOW_MAX_LINES` in `conf.lua` (e.g., `DEBUG_WINDOW_MAX_LINES = 20`).
 
 ---
 

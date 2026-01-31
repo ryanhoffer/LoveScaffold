@@ -9,7 +9,8 @@ end
 
 function DebugWindow:print(line)
     table.insert(self.lines, line)
-    if #self.lines > 10 then
+    local maxLines = _G.DEBUG_WINDOW_MAX_LINES or 10
+    if #self.lines > maxLines then
         table.remove(self.lines, 1)
     end
 end

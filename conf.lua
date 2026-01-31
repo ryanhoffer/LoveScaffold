@@ -8,3 +8,6 @@ end
 
 -- Debug window keybind (can be changed)
 DEBUG_WINDOW_KEY = "f12"
+
+-- Debug window max lines (can be changed)
+DEBUG_WINDOW_MAX_LINES = 20

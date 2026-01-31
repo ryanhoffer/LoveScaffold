@@ -19,6 +19,7 @@ end
 
 function Player:update(dt, inputManager)
     local dx, dy = 0, 0
+    if inputManager.keyboard:isDown('lshift') then self.speed = 50 else self.speed = 200 end
     if inputManager.keyboard:isDown('left') or inputManager.keyboard:isDown('a') then dx = dx - 1 end
     if inputManager.keyboard:isDown('right') or inputManager.keyboard:isDown('d') then dx = dx + 1 end
     if inputManager.keyboard:isDown('up') or inputManager.keyboard:isDown('w') then dy = dy - 1 end
