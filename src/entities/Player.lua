@@ -8,6 +8,8 @@ function Player.new(x, y)
     self.width = 32
     self.height = 32
     self.speed = 200
+    self.vx = 0
+    self.vy = 0
     return self
 end
 
@@ -24,8 +26,13 @@ function Player:update(dt, inputManager)
     local len = math.sqrt(dx*dx + dy*dy)
     if len > 0 then
         dx, dy = dx/len, dy/len
-        self.x = self.x + dx * self.speed * dt
-        self.y = self.y + dy * self.speed * dt
+        self.vx = dx * self.speed
+        self.vy = dy * self.speed
+        self.x = self.x + self.vx * dt
+        self.y = self.y + self.vy * dt
+    else
+        self.vx = 0
+        self.vy = 0
     end
 end
 

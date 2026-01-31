@@ -5,3 +5,6 @@ function love.conf(t)
     t.window.resizable = false
     t.window.vsync = 1
 end
+
+-- Debug window keybind (can be changed)
+DEBUG_WINDOW_KEY = "f12"

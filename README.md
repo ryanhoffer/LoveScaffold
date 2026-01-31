@@ -33,6 +33,12 @@ conf.lua          -- LÖVE configuration
 - Camera system
 - Keyboard & mouse input
 - Modular code structure
+- Toggleable debug window (default key: F12, configurable in conf.lua)
+
+### Debug Window
+
+- Press the debug key (default: F12) to toggle the debug window in any scene.
+- To change the key, edit the `DEBUG_WINDOW_KEY` variable in `conf.lua`.
 
 ## 🌱 Future Ideas
 
