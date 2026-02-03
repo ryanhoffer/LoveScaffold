@@ -18,6 +18,8 @@ function Game:update(dt, inputManager)
 	for _, entity in ipairs(self.entities) do
 		entity:update(dt, inputManager)
 	end
+	-- Print number of entities to the console
+	print("Number of entities:", #self.entities)
 end
 
 

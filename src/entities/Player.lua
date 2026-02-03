@@ -10,6 +10,7 @@ function Player.new(x, y)
     self.speed = 200
     self.vx = 0
     self.vy = 0
+    self.sprite = love.graphics.newImage('src/assets/images/player.png')
     return self
 end
 
@@ -35,12 +36,12 @@ function Player:update(dt, inputManager)
         self.vx = 0
         self.vy = 0
     end
+
 end
 
 function Player:draw()
-    love.graphics.setColor(1, 0, 1)
-    love.graphics.rectangle('fill', self.x-16, self.y-16, self.width, self.height)
     love.graphics.setColor(1, 1, 1)
+    love.graphics.draw(self.sprite, self.x - self.width/2, self.y - self.height/2)
 end
 
 return Player
